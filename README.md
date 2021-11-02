@@ -11,7 +11,7 @@
 - [mui](https://github.com/mui-org/material-ui/tree/master/examples/nextjs)
 - [eslint / typescript](https://github.com/vercel/next.js/tree/canary/examples/with-typescript-eslint-jest)
 - [next-i18next](https://github.com/isaachinman/next-i18next/tree/master/examples/simple)
-- [apollo-client / graphql](https://www.apollographql.com/blog/apollo-client/next-js/next-js-getting-started/)
+- [apollo-client / graphql](https://github.com/vercel/next.js/tree/canary/examples/with-apollo/lib)
 
 ## Why I can't commit?
 
