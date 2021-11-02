@@ -1,0 +1,61 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "node": true,
+    "jest": true
+  },
+  "settings": {
+    "import/resolver": {
+      "typescript": {}
+    }
+  },
+  "extends": [
+    "plugin:react/recommended",
+    "airbnb",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:@next/next/recommended"
+  ],
+  "parserOptions": {
+    "project": "./tsconfig.json",
+    "tsconfigRootDir": "./",
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "parser": "@typescript-eslint/parser",
+  "plugins": [
+    "react",
+    "@typescript-eslint"
+  ],
+  "rules": {
+    "no-console": [2, {
+      "allow": ["warn", "error"]
+    }],
+    "@typescript-eslint/no-unused-vars": [2, {
+      "argsIgnorePattern": "^_"
+    }],
+    "no-use-before-define": "off",
+    "@typescript-eslint/no-use-before-define": ["error"],
+    "react/jsx-filename-extension": [ "warn", {"extensions": [".tsx"]} ],
+    "no-shadow": "off",
+    "@typescript-eslint/no-shadow": ["error"],
+    "max-len": ["warn", { "code": 110 }],
+    // "react-hooks/rules-of-hooks": "error",
+    // "react-hooks/exhaustive-deps": "warn",
+    "react/prop-types": "off",
+    "import/prefer-default-export": "off",
+    "quotes": ["error", "single"],
+    "semi": ["error", "never"],
+    "import/extensions": "off",
+    "react/jsx-max-props-per-line": [2, {
+      "maximum": {
+        "single": 1,
+        "multi": 1
+      }
+    }]
+  },
+  "ignorePatterns": "*.js"
+}
